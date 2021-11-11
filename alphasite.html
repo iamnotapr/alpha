@@ -11,7 +11,7 @@
             left: 0;
             width: 100%;
             height: 60px;
-            background-color: black;
+            background-color: #dddddd;
             z-index: 5;
             min-width: 605px;
             max-height: 120px;
@@ -27,7 +27,7 @@
             position: absolute;
             top: -9px;
             left: 20px;
-            color: white;
+            color: black;
         }
 
         .text {
@@ -82,11 +82,11 @@
 
         .footer {
             position: absolute;
-            bottom: 0;
+            top: 1100px ;
             left: 0;
             width: 100%;
             height: 50px;
-            background: black;
+            background: #303030;
             min-width: 400px;
             text-align: center;
         }
@@ -133,8 +133,8 @@
             right: 100px;
             width: 40px;
             height: 5px;
-            background: white;
-            z-index: 30;
+            background: black;
+            z-index: 99;
         }
 
         .popupshow2 {
@@ -143,7 +143,7 @@
             right: 100px;
             width: 40px;
             height: 5px;
-            background: white;
+            background: black;
             z-index: 30;
         }
 
@@ -312,13 +312,6 @@
             left: 10px;
             color: white;
         }
-
-        body {
-            background: url(https://w-dog.ru/wallpapers/3/1/468097101372389/planeta-mars-krasnaya.jpg);
-            max-height: 100%;
-            min-height: 100%;
-        }
-
         .motor {
             position: absolute;
             top: 300px;
@@ -335,7 +328,21 @@
             top: -5px;
             left: 10px;
         }
-    </style>
+        @media screen and (max-width: 768px) {
+            .alpha{height: 100px;width: 100%;}
+        }
+        .ul{position: absolute;top:150px;left:1100px;display: grid;}
+        body{background: #eeeeee;}.input{position: absolute;top:15px;left:200px;width: 150px;height: 30px;border-radius: 30px;border:none;}
+        .rsv{position: absolute;top:0;left:0;width: 200px;height: 220px;background: white;border-radius: 4px;display: grid;box-shadow: 0 0 1px;}
+        .textAl{position: absolute;top:10px;left:60px;color: black;}
+        .textAbout{position: absolute;top:29px;left:10px;}.sytemRsv{position: absolute;top:320px;left:0;width: 200px;height: 220px;background: white;z-index: 999;display: grid;border-radius: 4px;box-shadow: 0 0 1px;border: none;}
+        .sytemRsvp{position: absolute;top:10px;left:10px;color: black;}
+        .procent{position: absolute;top:0;left:0;width: 100%;height: 100%;}
+        .input:active{border-radius:30px;}.right{position: absolute;left:350px;top:60px;width:2px;height: 100%;background: #bbbbbb;}
+        .weAre{position: absolute;}.enginy{position: absolute;top:70px;left: 10px;color: black;width: 340px;}
+        .arduino{position: absolute;top:80px;left:390px;color: black;}
+        .hide{display: none;}
+   </style>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
@@ -349,15 +356,7 @@
             <span class="site"></span>
         </a>
         <h1 class="eight">Alpha</h1>
-        <a href=" https://iamnotapr.github.io/alpha/alpha.html">
-            <span class="spanp"></span>
-            <p class="project">Alpha-8</p>
-        </a>
-        <p class="newtest">Будущий тест</p>
-        <a href=" https://iamnotapr.github.io/alpha/rsv.html">
-            <span class="aroundjump"></span>
-            <p class="word">RSV-1</p>
-        </a>
+        <input placeholder="Поиск..." class="input" id="in"/>
     </div>
     <!--popup-->
     <div class="b-container">
@@ -378,15 +377,28 @@
             </a>
         </div>
     </div>
-    <div class="aboutUs" >
-        <p class="this">Это блог двух ракето-модельных любителей.</p>
-        <p class="here">Здесь мы будем бубликовать наши успехи и поражения.</p>
-    </div>
-    <div class="motor">
-        <p class="wordmotor">Двигатель-Карамельное топливо(селитра калиевая 65%, сахарная пудра 35%), небольшая труба.</p>
-    </div>
 
-                                    <!--footer-->
+                <!--ul-->
+
+    <ul class="ul">
+        <li class="sytemRsv">
+            <p class="sytemRsvp">RSV-система это механизм открытия парашюта.</p>
+        </li>
+        <li class="rsv">
+            <a href="https://alphamodel.ga/rsv.html">
+                <span class="procent"></span>
+            </a>
+            <p class="textAl">Alpha-8</p>
+            <p class="textAbout">Проект Alpha-8-это модельная ракета.</p>
+        </li class="rsvSystemli">
+    </ul>
+
+    <div class="right"></div>
+    <div class="weAre">
+        <P class="enginy">Двигатель состоит из селитры калиевой, сахарная пудра.</P>
+    </div>
+    <div class="arduino">arduino-главный компьютер во всех ракетах</div>
+    </div>                
     <div class="footer">
         <p class="inc">© 2021 Alpha.inc</p>
         <a href="https://iamnotapr.github.io/alpha/private.html"  class="polite">
@@ -405,6 +417,39 @@
         function PopUpHide() {
             $("#popup1").hide();
         }
+
+        //search
+
+        window.onload = () => {
+	let input = document.querySelector('#in');
+
+	input.oninput = function() {
+		let value = this.value.trim();
+		let list = document.querySelectorAll('.ul li');
+
+		// if (value) {
+		// 	list.forEach(elem => {
+		// 		if (elem.innerText.search(value) == -1) {
+		// 			elem.classList.add('hide');
+		// 		}
+		// 	});
+		// } else {
+		// 	list.forEach(elem => {
+		// 		elem.classList.remove('hide');
+		// 	});
+		// }
+
+		value
+			? list.forEach(elem => {
+					elem.innerText.search(value) == -1
+						? elem.classList.add('hide')
+						: elem.classList.remove('hide');
+			  })
+			: list.forEach(elem => {
+					elem.classList.remove('hide');
+			  });
+	};
+};
 
     </script>
 </body>
