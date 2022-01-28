@@ -1,0 +1,21 @@
+.div-header{position: fixed;top:0;left: 0;width: 100%;height: 50px;z-index: 99;}
+        .nav-rgb{position: absolute;top:0;left:0;width: 100%;height: 800px;background: url(https://img.wallpapersafari.com/desktop/1920/1080/69/58/s7Ekrx.jpg);}
+        .logo-item{position: absolute;top:10px;left:230px;color: white;font-size: 30px;}
+        .link-alpha-8{position: absolute;top:25px;left:360px;color: white;font-size: large;}
+        .space-station{position: absolute;top:25px;color: white;font-size: large;left:460px;}
+        .span-inf{position: absolute;top:400px;left:80px;color: white;z-index: 9;font-size: 27px;}
+        .span-our-in{position: absolute;top:450px;color: white;z-index: 9;font-size: 35px;left: 80px;}
+        .pointer:hover{text-decoration: none;color: white;}
+        .pointer{cursor: pointer;color: white;text-decoration: none;}
+        .button-link-div{position: absolute;top:540px;left:80px;}.button-link-div button{width: 180px;height: 70px;border:2px solid white; z-index: 9;font-size: 18px;background: none;color: white;border-radius: 1px;}
+        .button-link-div button:hover{background-color: white;color: black;transition: 0.5s;}
+        .nav-rgb-2{position: absolute;top:800px;left:0;width: 100%;height: 600px;background: url(https://wp.technologyreview.com/wp-content/uploads/2019/10/180119-f-zz999-102c-10.jpg?resize=636);}
+        .strobbery-launck-pad span{position: absolute;top:1200px;left:80px;color: white;font-size: larger;width: 300px;}
+        #launch-pad{position: absolute;top:1100px;left:80px;color: white;z-index: 9;}.alpha-inform span{position: absolute;}
+        .nav-rgb-3{position: absolute;top:1400px;left:0;width: 100%;height: 500px;background: url(https://img1.goodfon.ru/original/2048x1367/5/73/spacex-crs-6-kosmodrom.jpg);}
+        .alpha-inform h2{position: absolute;top:1650px;left:80px;color: white;}.text-inform-about{position: absolute;top:1700px;left:80px;color: white;font-size: larger;width: 300px;}
+        .footer-div-main{position: absolute;top:1900px;left: 0;width: 100%;height: 100px;background-color: black;}
+        .inform-footer-inc{position: absolute;top:40px;left:400px;color: grey;font-size: small;}
+        .link-youtube a{position: absolute;top:40px;left:550px;color: white;font-size: 15px;text-decoration: none;}
+        .link-youtube a:hover{color:grey;transition: 0.5s; }
+.privacy-noticy a{position: absolute;top:40px;left:650px;color: white;text-decoration: none;font-style: 15px;}.privacy-noticy a:hover{color: grey;transition: 0.5s;}
