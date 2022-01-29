@@ -4,7 +4,7 @@ header_main += `
         <div class="div-header">
             <div class="logo-item">Alpha</div>
             <div class="link-alpha-8">
-                <a href="https://alphamodel.ga/alpha-inf.html" class="pointer">Alpha-8</a>
+                <a href="alpha-inf.html" class="pointer">Alpha-8</a>
             </div>
             <div class="space-station">
                 <a href="#launch-pad" class="pointer">Малина</a>
